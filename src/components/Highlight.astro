@@ -1,0 +1,29 @@
+---
+interface Props {
+    message: string;
+}
+
+const {message} = Astro.props;
+---
+
+<div class="alert">
+    <p>{message}</p>
+</div>
+
+<style>
+    .alert {
+        width: 250px;
+        background-color: #F7E079;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .alert p {
+        display: block;
+        padding: 5px 0px;
+        font-family: "Nanum Pen Script", cursive;
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        font-style: normal;
+    }
+</style>
