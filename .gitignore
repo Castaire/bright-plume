@@ -18,7 +18,7 @@ pnpm-debug.log*
 .env.production
 
 # VS code specific files
-.vscode/*
+.vscode/
 
 # misc
 notes.txt
