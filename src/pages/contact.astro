@@ -12,7 +12,8 @@ let mapDirUrl = "https://www.google.com/maps/dir//Eiffel+Tower,Paris+France"
 
 <ColumnLayout title="CONTACT">
     <div class="map" slot="column1">
-        <iframe referrerpolicy="no-referrer-when-downgrade" src={mapUrl} allowfullscreen></iframe>
+        <iframe referrerpolicy="no-referrer-when-downgrade" 
+        src={mapUrl} allowfullscreen/>
     </div>
     <div class="content" slot="column2">
         <Details
@@ -31,7 +32,7 @@ let mapDirUrl = "https://www.google.com/maps/dir//Eiffel+Tower,Paris+France"
 <style>
     .map {
         grid-column-start: 1;
-        height: 100vh;
+        height: inherit;
     }
     .map iframe {
         width: 100%;
@@ -39,8 +40,8 @@ let mapDirUrl = "https://www.google.com/maps/dir//Eiffel+Tower,Paris+France"
     }
     .content {
         position: relative;
-        top: 30%;
-        margin: auto;
+        top: 50%;
+        transform: translateY(-50%);
         margin-left: 15%;
         text-align: left;
     }

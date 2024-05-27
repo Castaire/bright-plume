@@ -1,8 +1,54 @@
 ---
 
-import Layout from '../layouts/StandardLayout.astro';
+import ColumnLayout from '../layouts/ColumnLayout.astro';
+
+import { Image } from 'astro:assets';
+import fluidImg from "../assets/fluid-spread.jpg";
+import * as about from '../content/page/about.md';
 
 ---
 
-<Layout title="ABOUT">
-</Layout>
+<ColumnLayout title="ABOUT">
+    <Image src={fluidImg} alt="" slot="column1"/>
+    <div class="content noto-sans" slot="column2">
+        <hr>
+        <Fragment set:html={about.compiledContent()}/>
+        <p class="signoff noto-sans">- {about.frontmatter.signoff} -</p>
+        <hr>
+    </div>
+</ColumnLayout>
+
+<style>
+    img {
+        height: 400px;
+    }
+    .content {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 25px;
+        text-align: left;
+        font-size: 14px;
+        letter-spacing: 0.04em;
+    }
+    hr {
+        height: 3px;
+        margin: 50px;
+        border: none;
+        background-color: #605C4E;
+        color: #605C4E;
+    }
+    .signoff {
+        margin: auto;
+        margin-top: 30px;
+        color: #939393;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
+    .noto-sans {
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
+</style>  
