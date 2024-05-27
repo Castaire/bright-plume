@@ -1,6 +1,7 @@
 ---
 
 import Layout from '../layouts/Layout.astro';
+import Details from '../components/Details.astro';
 
 // setup embedded maps
 const mapApiKey = import.meta.env.MAPS_API_KEY;
@@ -16,18 +17,16 @@ let mapDirUrl = "https://www.google.com/maps/dir//Eiffel+Tower,Paris+France"
         </div>
         <div style="details">
             <div class="content">
-                <p class="title-text">MR LU'S KITCHEN</p>
-                <p class="common-text" style="margin-bottom: 20px">
-                    #101 - 2689 Pandosy Street<br>Kelowna, BC<br>V1Y 9V9
-                </p>
-                <p class="common-text inline" id="label" style="margin-right: 10px;">
-                    EVERY DAY
-                </p>
-                <p class="common-text inline" style="margin-bottom: 10px;">11am - 9pm</p>
-                <a href={mapDirUrl}>
-                    <p class="common-text" id="label" style="margin-bottom: 20px;"><u>GET DIRECTIONS</u></p>
-                </a>
-                <p class="common-text">250.763.2988 &nbsp;/&nbsp; 250.763.2986</p>
+                <Details
+                    company="MR LU'S KITCHEN"
+                    street="#101 - 2689 Pandosy Street"
+                    area="Kelowna, BC"
+                    postalCode="V1Y 9V9"
+                    hours="11am - 9pm"
+                    phone1="250.763.2988"
+                    phone2="250.763.2986"
+                    mapDirUrl={mapDirUrl}
+                />
             </div>
         </div>
     </div>
@@ -54,30 +53,7 @@ let mapDirUrl = "https://www.google.com/maps/dir//Eiffel+Tower,Paris+France"
         position: relative;
         top: 30%;
         margin: auto;
-        margin-left: 80px;
+        margin-left: 15%;
         text-align: left;
-    }
-    .title-text {
-        margin-bottom: 20px;
-        font-family: "Permanent Marker";
-        font-weight: 400;
-        font-size: 18px;
-        color: black;
-    }
-    .common-text {
-        font-family: "Noto Sans";
-        font-weight: 300;
-        font-style: normal;
-        font-size: 16px;
-        line-height: 25px;
-        letter-spacing: 0.06em;
-        color: black;
-    }
-    .inline {
-        display: inline-block;
-    }
-    #label {
-        display: inline-block;
-        color: #939393;
     }
 </style>
