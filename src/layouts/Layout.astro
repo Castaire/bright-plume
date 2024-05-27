@@ -1,6 +1,8 @@
 ---
 
+import Detail from '../components/Detail.astro';
 import Highlight from '../components/Highlight.astro';
+import Icon from '../components/Icon.astro';
 import Nav from '../components/Nav.astro';
 
 interface Props {
@@ -25,24 +27,24 @@ const { title } = Astro.props;
             <slot/>
         </div>
         <div class="sidebar">
-            <Highlight message="est 2024!"/>
+            <Highlight message="grand opening!"/>
+            <Icon/>
             <Nav/>
+            <Detail message="open 7 days a week // 250.763.2988"/>
         </div>
     </body>
 </html>
 <style>
     body {
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 70% 30%;
     }
     .main-content {
         grid-column-start: 1;
-        margin: 0px;
-        border: 1px solid red;
     }
     .sidebar {
         grid-column-start: 2;
-        margin: 0px;
-        border: 1px solid blue;
+        height: 100vh;
+        background-color: #fff2d1;
     }
 </style>
