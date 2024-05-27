@@ -3,18 +3,18 @@
 import { Image } from 'astro:assets';
 import wokImg from "../assets/wok-spread.jpg"
 
-import Layout from '../layouts/Layout.astro';
+import StandardLayout from '../layouts/StandardLayout.astro';
 
 ---
 
-<Layout title="Mr. Lu's Kitchen">
+<StandardLayout title="Mr. Lu's Kitchen">
     <Image src={wokImg} alt="Wok in a kitchen"/>
     <div class="splash">
         <h3 class="splash-text">THIS IS</h3>
         <h2 class="splash-text">MR LU'S KITCHEN !</h2>
     </div>
     <p>serving up traditional Szechuan cuisine with a modern twist, from us to you</p>
-</Layout>
+</StandardLayout>
 
 <style>
     img {

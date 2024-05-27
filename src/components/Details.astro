@@ -15,19 +15,19 @@ const {company, street, area, postalCode, hours, phone1, phone2, mapDirUrl} = As
 ---
 
 <p class="title-text btm-margin-20">{company}</p>
-    <p class="common-text btm-margin-20">
-        {street}<br>{area}<br>{postalCode}
-    </p>
-    <p class="common-text inline label btm-margin-10">
-        EVERY DAY
-    </p>
-    <p class="common-text inline btm-margin-10">{hours}</p>
-    <div class="btm-margin-10">
-        <a href={mapDirUrl} class="common-text label">
-            <u>GET DIRECTIONS</u>
-        </a>
-    </div>
-    <p class="common-text">{phone1} &nbsp;/&nbsp; {phone2}</p>
+<p class="common-text btm-margin-20">
+    {street}<br>{area}<br>{postalCode}
+</p>
+<p class="common-text inline label btm-margin-10">
+    EVERY DAY
+</p>
+<p class="common-text inline btm-margin-10">{hours}</p>
+<div class="btm-margin-10">
+    <a href={mapDirUrl} class="common-text label">
+        <u>GET DIRECTIONS</u>
+    </a>
+</div>
+<p class="common-text">{phone1} &nbsp;/&nbsp; {phone2}</p>
 
 <style>
     .title-text {
