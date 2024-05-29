@@ -1,0 +1,12 @@
+[
+    {
+        "name": "HOUSE EGG FOO YUNG",
+        "price": 17.95,
+        "desc": "egg pancake | all the works"
+    },
+    {
+        "name": "EGG FOO YUNG",
+        "price": 15.95,
+        "choices": "beef | chicken | pork | shrimp | veggies"
+    }
+]

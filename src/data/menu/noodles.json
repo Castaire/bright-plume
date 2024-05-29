@@ -1,0 +1,32 @@
+[
+    {
+        "name": "CANTONESE-STYLE CHOW MEIN",
+        "price": 16.95,
+        "desc": "crispy noodles | veggies | meats"
+    },
+    {
+        "name": "CHINESE-STYLE CHOW MEIN",
+        "price": 16.95,
+        "desc": "crispy noodles | veggies | meats"
+    },
+    {
+        "name": "HOUSE CHOW MEIN",
+        "price": 16.95,
+        "desc": "all the works"
+    },
+    {
+        "name": "CHOW MEIN",
+        "price": 14.95,
+        "choices": "beef | chicken | pork | shrimp | veggies"
+    },
+    {
+        "name": "TOMATO SAUCE CHOW MEIN",
+        "price": 15.95,
+        "choices": "beef | chicken | shrimp"
+    },
+    {
+        "name": "SHANGHAI NOODLES",
+        "price": 15.95,
+        "desc": "thick noodles | chicken | veggies"
+    }
+]

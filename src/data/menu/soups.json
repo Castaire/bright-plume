@@ -1,0 +1,24 @@
+[
+    {
+        "name": "WON TON SOUP",
+        "smallPrice": 6.95,
+        "largePrice": 12.95,
+        "desc": "pork | light broth"
+    },
+    {
+        "name": "HOUSE WON TON SOUP",
+        "price": 18.50,
+        "desc": "won tons | all the works"
+    },
+    {
+        "name": "HOT & SOUR SOUP",
+        "price": 13.95,
+        "desc": "pork | chicken | shrimp | tofu",
+        "isSpicy": true
+    },
+    {
+        "name": "NOODLE SOUP",
+        "price": 12.95,
+        "choices": "won ton | beef | chicken | pork | veggies"
+    }
+]

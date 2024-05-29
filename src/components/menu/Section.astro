@@ -1,0 +1,33 @@
+---
+
+interface Props {
+    title:  string;
+}
+
+const {title} = Astro.props;
+
+---
+
+<h2 class="section-name">{title}</h2>
+<hr>
+
+<style>
+    .section-name {
+        margin-left: 20px;
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        letter-spacing: 0.05em;
+        color: #939393;
+    }
+    hr {
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        border: none;
+        height: 2px;
+        background-color: #363020;
+        color: #363020;
+    }
+</style>

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "POT STICKERS [10]",
+        "price": 6.95,
+        "desc": "pork | cabbage | pan-fried"
+    },
+    {
+        "name": "DRY SPARERIBS",
+        "price": 13.95,
+        "desc": "appetizer-sized"
+    },
+    {
+        "name": "DEEP FRIED WONTONS",
+        "price": 10.95,
+        "desc": "with sweet & sour sauce"
+    },
+    {
+        "name": "SPRING ROLL",
+        "price": 2.95,
+        "desc": "pork | veggies"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "name": "DEEP FRIED PRAWNS",
+        "price": 16.95
+    },
+    {
+        "name": "FRIED WHOLE PRAWNS",
+        "price": 19.95,
+        "choices": "black bean | curry | szechuan | tomato",
+        "isSpicy": true
+    },
+    {
+        "name": "FRIED SCALLOPS WITH SNOW PEA",
+        "price": 20.95
+    },
+    {
+        "name": "DEEP FRIED SQUID WITH SPICY SALT",
+        "price": 19.95
+    },
+    {
+        "name": "DEEP FRIED PRAWNS WITH SPICY SALT",
+        "price": 19.95
+    }
+]

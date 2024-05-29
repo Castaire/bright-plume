@@ -1,0 +1,22 @@
+[
+    {
+        "name": "SWEET & SOUR PORK",
+        "price": 14.95,
+        "choices": "boneless | bone-in (spareribs)"
+    },
+    {
+        "name": "DRY GARLIC PORK",
+        "price": 14.95,
+        "choices": "boneless | bone-in (spareribs)"
+    },
+    {
+        "name": "HONEY GARLIC PORK",
+        "price": 14.95,
+        "choices": "boneless | bone-in (spareribs)"
+    },
+    {
+        "name": "BBQ PORK",
+        "price": 14.95,
+        "desc": "slow-cooked | sweet-glazed"
+    }
+]

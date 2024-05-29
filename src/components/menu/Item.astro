@@ -1,0 +1,79 @@
+---
+
+import { Image } from "astro:assets";
+import pepperIcon from "../assets/pepper.svg";
+
+interface Props {
+    name:           string;
+    description?:   string;
+    price:          number;
+    choices?:       string;
+    isSpicy?:       boolean;
+}
+
+const {name, description, choices, price, isSpicy} = Astro.props;
+
+---
+
+<div class="item">
+    <div class="title">
+        <p class="name">{name}</p>
+        <p class="price">{price}</p>
+    </div>
+    <div class=details">
+        {
+            choices == null ? 
+            <p class="desc">{description}</p> :
+            <p class="desc ib">choose [1]:</p>
+            <p class="choice ib">{choices}</p>
+        }
+    </div>
+    {
+        isSpicy && 
+        <Image src={pepperIcon} alt=""/>
+    }
+</div>
+
+<style>
+    .item {
+        width: 45%;
+        min-width: 250px;
+        height: 70px;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        letter-spacing: 0.05em;
+    }
+    .title p {
+        display: inline-block;
+    }
+    .name {
+        /*border: 1px solid red;*/
+        width: 60%;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .price {
+        /*border: 1px solid blue;*/
+        float: right;
+        width: 30%;
+        font-size: 13px;
+        text-align: right;
+        margin-top: 3px;
+        padding-right: 15px;
+    }
+    .desc {
+        margin-top: 5px;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        font-weight: 300;
+    }
+    .choice {
+        margin-top: 5px;
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        font-weight: 400;
+    }
+    .ib {
+        display: inline-block;
+    }
+</style>

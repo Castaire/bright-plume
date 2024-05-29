@@ -1,8 +1,34 @@
 ---
 
-import Layout from '../layouts/StandardLayout.astro';
+import MenuLayout from '../layouts/MenuLayout.astro';
+import Section from '../components/menu/Section.astro';
+import Item from '../components/menu/Item.astro';
+
+import appetizers from "../data/menu/appetizers.json";
 
 ---
 
-<Layout title="MENU">
-</Layout>
+<MenuLayout title="MENU">
+    <div class="menu">
+        <Section title="STARTERS"/>
+        <div class="container">
+            {appetizers.map(
+                (i) => <Item name={i.name}
+                    description={i.desc} 
+                    price={i.price}
+                    choices=null />)
+            }
+        </div>
+    </div>
+</MenuLayout>
+
+<style>
+    .menu {
+        padding: 35px 70px;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+</style>

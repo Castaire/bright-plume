@@ -1,0 +1,28 @@
+[
+    {
+        "name": "HOUSE FRIED RICE",
+        "price": 15.95,
+        "desc": "all the works | epic wok hei"
+    },
+    {
+        "name": "FRIED RICE",
+        "price": 13.95,
+        "choices": "beef | chicken | pork | shrimp | veggies"
+    },
+    {
+        "name": "TOMATO SAUCE FRIED RICE",
+        "price": 15.50,
+        "choices": "beef | chicken | shrimp"
+    },
+    {
+        "name": "CURRY SAUCE FRIED RICE",
+        "price": 15.50,
+        "choices": "beef | chicken | shrimp",
+        "isSpicy": true
+    },
+    {
+        "name": "STEAMED RICE",
+        "smallPrice": 3.00,
+        "largePrice": 6.00
+    }
+]

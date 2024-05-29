@@ -1,0 +1,42 @@
+[
+    {
+        "name": "HOUSE CHOP SUEY",
+        "price": 17.95,
+        "desc": "stir-fried vegs | all the works"
+    },
+    {
+        "name": "CHOP SUEY",
+        "price": 14.95,
+        "choices": "beef | chicken | pork | shrimp | veggies"
+    },
+    {
+        "name": "TOMATO SAUCE CHOP SUEY",
+        "price": 16.95,
+        "choices": "beef | chicken | shrimp"
+    },
+    {
+        "name": "CURRY SAUCE CHOP SUEY",
+        "price": 16.95,
+        "choices": "beef | chicken | shrimp",
+        "isSpicy": true
+    },
+    {
+        "name": "BEEF & GREEN PEPPERS IN BLACK BEAN SAUCE",
+        "price": 16.95
+    },
+    {
+        "name": "BEEF CHOW BROCCOLI",
+        "price": 15.95,
+        "desc": "beef | broccoli | haha"
+    },
+    {
+        "name": "STIR-FRIED SNOW PEAS",
+        "price": 16.95,
+        "choices": "beef | chicken | shrimp"
+    },
+    {
+        "name": "ALMOND GAI DING",
+        "price": "16.95",
+        "desc": "chicken | assorted vegs | almonds"
+    }
+]

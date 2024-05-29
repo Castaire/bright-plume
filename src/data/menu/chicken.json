@@ -1,0 +1,27 @@
+[
+    {
+        "name": "ALMOND CHICKEN",
+        "price": 15.95,
+        "desc": "fried chicken | almond powder"
+    },
+    {
+        "name": "SWEET & SOUR CHICKEN BALLS",
+        "price": 15.95
+    },
+    {
+        "name": "STIR-FRY CHICKEN WITH VEGETABLES",
+        "price": 15.95,
+        "choices": "black bean sauce | curry sauce",
+        "isSpicy": true
+    },
+    {
+        "name": "DEEP FRIED CHICKEN WINGS",
+        "price": 15.95,
+        "choices": "original | honey garlic | spicy",
+        "isSpicy": true
+    },
+    {
+        "name": "HONEY GARLIC SESAME CHICKEN",
+        "price": 15.95
+    }
+]
