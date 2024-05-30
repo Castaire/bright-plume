@@ -3,8 +3,18 @@
 import MenuLayout from '../layouts/MenuLayout.astro';
 import Section from '../components/menu/Section.astro';
 import Item from '../components/menu/Item.astro';
+import SizedItem from '../components/menu/SizedItem.astro';
 
 import appetizers from "../data/menu/appetizers.json";
+import soups from "../data/menu/soups.json";
+import rices from "../data/menu/rice.json";
+import noodles from "../data/menu/noodles.json";
+import eggs from "../data/menu/egg.json";
+import veggies from "../data/menu/veggies.json";
+import chickens from "../data/menu/chicken.json";
+import pork from "../data/menu/pork.json";
+import seafood from "../data/menu/seafood.json";
+import specialties from "../data/menu/specialties.json";
 
 ---
 
@@ -16,8 +26,107 @@ import appetizers from "../data/menu/appetizers.json";
                 (i) => <Item name={i.name}
                     description={i.desc} 
                     price={i.price}
-                    choices=null />)
+                    choices={i.choices} />
+            )}
+        </div>
+        <Section title="SOUPS"/>
+        <div class="container">
+            {
+                soups.map(function(i) {
+                    if (!i.largePrice) {
+                        return <Item name={i.name}
+                            description={i.desc}
+                            price={i.price}
+                            choices={i.choices}/>
+                    } else {
+                        return <SizedItem name={i.name}
+                            description={i.desc}
+                            price1={i.price}
+                            price2={i.largePrice}/>
+                    }
+                })
             }
+        </div>
+        <Section title="RICE"/>
+        <div class="container">
+            {
+                rices.map(function(i) {
+                    if (!i.largePrice) {
+                        return <Item name={i.name}
+                            description={i.desc}
+                            price={i.price}
+                            choices={i.choices}/>
+                    } else {
+                        return <SizedItem name={i.name}
+                            description={i.desc}
+                            price1={i.price}
+                            price2={i.largePrice}/>
+                    }
+                })
+            }
+        </div>
+        <Section title="NOODLES"/>
+        <div class="container">
+            {noodles.map(
+                (i) => <Item name={i.name}
+                    description={i.desc} 
+                    price={i.price}
+                    choices={i.choices} />
+            )}
+        </div>
+        <Section title="EGG FOO YUNG"/>
+        <div class="container">
+            {eggs.map(
+                (i) => <Item name={i.name}
+                    description={i.desc} 
+                    price={i.price}
+                    choices={i.choices} />
+            )}
+        </div>
+        <Section title="VEGGIES"/>
+        <div class="container">
+            {veggies.map(
+                (i) => <Item name={i.name}
+                    description={i.desc} 
+                    price={i.price}
+                    choices={i.choices} />
+            )}
+        </div>
+        <Section title="CHICKEN"/>
+        <div class="container">
+            {chickens.map(
+                (i) => <Item name={i.name}
+                    description={i.desc} 
+                    price={i.price}
+                    choices={i.choices} />
+            )}
+        </div>
+        <Section title="PORK"/>
+        <div class="container">
+            {pork.map(
+                (i) => <Item name={i.name}
+                    description={i.desc} 
+                    price={i.price}
+                    choices={i.choices} />
+            )}
+        </div>
+        <Section title="SEAFOOD"/>
+        <div class="container">
+            {seafood.map(
+                (i) => <Item name={i.name}
+                    description={i.desc} 
+                    price={i.price}
+                    choices={i.choices} />
+            )}
+        </div>
+        <Section title="OUR SPECIALTIES"/>
+        <div class="container">
+            {specialties.map(
+                (i) => <Item name={i.name}
+                    description={i.desc} 
+                    price={i.price}
+                    choices={i.choices} />
+            )}
         </div>
     </div>
 </MenuLayout>
@@ -30,5 +139,6 @@ import appetizers from "../data/menu/appetizers.json";
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-bottom: 35px;
     }
 </style>

@@ -18,5 +18,10 @@
         "name": "SPRING ROLL",
         "price": 2.95,
         "desc": "pork | veggies"
+    },
+    {
+        "name": "SIDE SAUCES",
+        "price": 3.00,
+        "choices": "sweet & sour | lemon | curry | black bean"
     }
 ]

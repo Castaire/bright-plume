@@ -1,0 +1,47 @@
+[
+    {
+        "name": "#1",
+        "price": 16.95,
+        "items": [
+            "Chicken Chow Mein",
+            "Sweet & Sour Pork",
+            "Deep Fried Prawns"
+        ]
+    },
+    {
+        "name": "#2",
+        "price": 16.95,
+        "items": [
+            "Chicken Chow Mein",
+            "Sweet & Sour Pork",
+            "Almond Chicken"
+        ]
+    },
+    {
+        "name": "#3",
+        "price": 16.95,
+        "items": [
+            "Chicken Chow Mein",
+            "Sweet & Sour Pork",
+            "Chicken Fried Rice"
+        ]
+    },
+    {
+        "name": "#4",
+        "price": 16.95,
+        "items": [
+            "Chicken Chow Mein",
+            "Sweet & Sour Pork",
+            "Beef Chop Suey"
+        ]
+    },
+    {
+        "name": "#5",
+        "price": 16.95,
+        "items": [
+            "Veggie Fried Rice",
+            "Veggie Chop Suey",
+            "Veggie Chow Mein"
+        ]
+    }
+]

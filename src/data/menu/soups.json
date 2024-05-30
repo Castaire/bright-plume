@@ -1,7 +1,7 @@
 [
     {
         "name": "WON TON SOUP",
-        "smallPrice": 6.95,
+        "price": 6.95,
         "largePrice": 12.95,
         "desc": "pork | light broth"
     },

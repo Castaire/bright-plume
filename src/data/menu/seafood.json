@@ -10,15 +10,17 @@
         "isSpicy": true
     },
     {
-        "name": "FRIED SCALLOPS WITH SNOW PEA",
+        "name": "SCALLOPS WITH SNOW PEA",
         "price": 20.95
     },
     {
-        "name": "DEEP FRIED SQUID WITH SPICY SALT",
-        "price": 19.95
+        "name": "SQUID WITH SPICY SALT",
+        "price": 19.95,
+        "desc": "deep fried | crowd-pleaser :)"
     },
     {
-        "name": "DEEP FRIED PRAWNS WITH SPICY SALT",
-        "price": 19.95
+        "name": "PRAWNS WITH SPICY SALT",
+        "price": 19.95,
+        "desc": "deep fried | shell-on | crowd-pleaser :)"
     }
 ]

@@ -1,6 +1,6 @@
 [
     {
-        "name": "SLICED BEEF WITH OYSTER SAUCE",
+        "name": "BEEF WITH OYSTER SAUCE",
         "price": 16.95,
         "desc": "stir-fry | with veggies"
     },
@@ -66,7 +66,7 @@
     {
         "name": "MA PO TOFU",
         "price": 15.95,
-        "desc": "minced pork | braised | spice-forwards",
+        "desc": "minced pork | braised | spice-forward",
         "isSpicy": true
     },
     {

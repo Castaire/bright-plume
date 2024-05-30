@@ -1,0 +1,48 @@
+[
+    {
+        "name": "Dinner for 2",
+        "price": 36.95,
+        "items": [
+            "[2] Spring Rolls",
+            "Chicken Chow Mein",
+            "Beef Chop Suey",
+            "Sweet & Sour Pork"
+        ]
+    },
+    {
+        "name": "Dinner for 3",
+        "price": 50.95,
+        "items": [
+            "[3] Spring Rolls",
+            "Chicken Chow Mein",
+            "Pork Fried Rice",
+            "Beef Chop Suey",
+            "Sweet & Sour Pork"
+        ]
+    },
+    {
+        "name": "Dinner for 4",
+        "price": 68.95,
+        "items": [
+            "[4] Spring Rolls",
+            "Chicken Chow Mein",
+            "Pork Fried Rice",
+            "Beef Chop Suey",
+            "Sweet & Sour Pork",
+            "Deep Fried Prawns"
+        ]
+    },
+    {
+        "name": "Dinner for 6",
+        "price": 98.95,
+        "items": [
+            "[6] Spring Rolls",
+            "Chicken Chow Mein",
+            "House Fried Rice",
+            "Almond Gai Ding",
+            "Almond Chicken",
+            "Sweet & Sour Pork",
+            "Deep Fried Prawns"
+        ]
+    }
+]

@@ -22,7 +22,7 @@
     },
     {
         "name": "STEAMED RICE",
-        "smallPrice": 3.00,
+        "price": 3.00,
         "largePrice": 6.00
     }
 ]

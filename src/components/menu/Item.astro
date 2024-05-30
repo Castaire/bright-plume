@@ -1,7 +1,7 @@
 ---
 
 import { Image } from "astro:assets";
-import pepperIcon from "../assets/pepper.svg";
+import pepperIcon from "../../assets/pepper.svg";
 
 interface Props {
     name:           string;
@@ -22,7 +22,7 @@ const {name, description, choices, price, isSpicy} = Astro.props;
     </div>
     <div class=details">
         {
-            choices == null ? 
+            choices === undefined ? 
             <p class="desc">{description}</p> :
             <p class="desc ib">choose [1]:</p>
             <p class="choice ib">{choices}</p>
@@ -47,15 +47,13 @@ const {name, description, choices, price, isSpicy} = Astro.props;
         display: inline-block;
     }
     .name {
-        /*border: 1px solid red;*/
-        width: 60%;
+        width: 75%;
         font-weight: 400;
         font-size: 15px;
     }
     .price {
-        /*border: 1px solid blue;*/
         float: right;
-        width: 30%;
+        width: 25%;
         font-size: 13px;
         text-align: right;
         margin-top: 3px;
