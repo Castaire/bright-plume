@@ -1,0 +1,58 @@
+---
+interface Props {
+    name:       string;
+    price:      number;
+    items:      string[];
+}
+
+const {name, price, items} = Astro.props;
+---
+
+<div class="set-item">
+    <div class="title">
+        <p class="name">{name}</p>
+        <p class="price">{price}</p>
+    </div>
+    <div class="content">
+        {items.map((i) => 
+            <p>- {i}</p>
+        )}
+    </div>
+</div>
+
+<style>
+    .set-item {
+        width: 45%;
+        min-width: 250px;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        letter-spacing: 0.05em;
+        margin-bottom: 25px;
+    }
+    .title p {
+        display: inline-block;
+    }
+    .name {
+        width: 75%;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .price {
+        float: right;
+        width: 25%;
+        font-size: 13px;
+        text-align: right;
+        margin-top: 3px;
+        padding-right: 15px;
+    }
+    .content {
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+    .content p {
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        font-weight: 300;
+        line-height: 24px;
+    }
+</style>

@@ -16,11 +16,13 @@
     {
         "name": "SQUID WITH SPICY SALT",
         "price": 19.95,
-        "desc": "deep fried | crowd-pleaser :)"
+        "desc": "deep fried | crowd-pleaser :)",
+        "isSpicy": true
     },
     {
         "name": "PRAWNS WITH SPICY SALT",
         "price": 19.95,
-        "desc": "deep fried | shell-on | crowd-pleaser :)"
+        "desc": "deep fried | shell-on | crowd-pleaser :)",
+        "isSpicy": true
     }
 ]

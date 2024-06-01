@@ -1,0 +1,44 @@
+---
+
+import MenuLayout from '../../layouts/MenuLayout.astro';
+import Section from '../../components/menu/Section.astro';
+import SetItem from '../../components/menu/SetItem.astro';
+
+import combos from '../../data/menu/combos.json';
+import dinners from '../../data/menu/family-dinners.json';
+
+---
+
+<MenuLayout title="COMBOS", iconName="menu">
+    <div class="menu">
+        <Section title="COMBOS FOR 1"/>
+        <div class="container">
+            {combos.map(
+                (i) => <SetItem name={i.name}
+                    price={i.price}
+                    items={i.items}
+                />
+            )}
+        </div>
+        <Section title="FAMILY DINNERS"/>
+        <div class="container">
+            {dinners.map(
+                (i) => <SetItem name={i.name}
+                    price={i.price}
+                    items={i.items}/>
+            )}
+        </div>
+    </div>
+</MenuLayout>
+
+<style>
+    .menu {
+        padding: 35px 70px;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 35px;
+    }
+</style>

@@ -10,7 +10,7 @@ let mapDirUrl = "https://www.google.com/maps/dir//Eiffel+Tower,Paris+France"
 
 ---
 
-<ColumnLayout title="CONTACT">
+<ColumnLayout title="CONTACT", iconName="marker">
     <div class="map" slot="column1">
         <iframe referrerpolicy="no-referrer-when-downgrade" 
         src={mapUrl} allowfullscreen/>
@@ -41,6 +41,7 @@ let mapDirUrl = "https://www.google.com/maps/dir//Eiffel+Tower,Paris+France"
     .content {
         position: relative;
         top: 50%;
+        -ms-transform: translate(-50%);
         transform: translateY(-50%);
         margin-left: 15%;
         text-align: left;

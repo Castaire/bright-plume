@@ -16,6 +16,10 @@ const {name, description, choices, price, isSpicy} = Astro.props;
 ---
 
 <div class="item">
+    {
+        isSpicy && 
+        <Image src={pepperIcon} alt=""/>
+    }
     <div class="title">
         <p class="name">{name}</p>
         <p class="price">{price}</p>
@@ -28,10 +32,6 @@ const {name, description, choices, price, isSpicy} = Astro.props;
             <p class="choice ib">{choices}</p>
         }
     </div>
-    {
-        isSpicy && 
-        <Image src={pepperIcon} alt=""/>
-    }
 </div>
 
 <style>
@@ -73,5 +73,14 @@ const {name, description, choices, price, isSpicy} = Astro.props;
     }
     .ib {
         display: inline-block;
+    }
+    img {
+        position: relative;
+        right: 25px;
+        top: 6px;
+        margin-bottom: -13px;
+        width: 13px;
+        height: 13px;
+        z-index: 1;
     }
 </style>

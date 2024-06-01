@@ -1,13 +1,26 @@
 ---
 
 import { Image } from "astro:assets";
-import chefIcon from "../assets/chef.svg"
+import type { ImageMetadata } from "astro";
+
+interface Props {
+    iconName:   string
+}
+
+const {iconName} = Astro.props;
+
+const icons = import.meta.glob<{default: ImageMetadata}>('../assets/icons/*.svg');
+
+let path = `../assets/icons/${iconName}.svg`;
+if (!icons[path]) {
+    throw new Error(`Could not find icon (${iconName}) in assets.`);
+}
 
 ---
 
 <div class="icon">
     <div class="icon-background"/>
-    <Image src={chefIcon} alt=""/>
+    <Image src={icons[path]()} alt=""/>
 </div>
 
 <style>
@@ -38,4 +51,3 @@ import chefIcon from "../assets/chef.svg"
         z-index: 1;
     }
 </style>
-
