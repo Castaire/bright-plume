@@ -1,7 +1,9 @@
 ---
 
+import { ViewTransitions } from 'astro:transitions';
 import Detail from '../components/DetailNote.astro';
 import Highlight from '../components/HighlightNote.astro';
+import HomeIcon from '../components/HomeIcon.astro';
 import Icon from '../components/Icon.astro';
 import Nav from '../components/Nav.astro';
 
@@ -22,15 +24,17 @@ const { title, iconName } = Astro.props;
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Permanent+Marker&display=swap" rel="stylesheet">
         <title>{title}</title>
+        <ViewTransitions/>
     </head>
     <body>
-        <div class="main-content">
+        <div class="main-content" transition:animate="fade">
             <slot/>
         </div>
-        <div class="sidebar">
+        <div class="sidebar" transition:animate="none">
             <Highlight message="grand opening!"/>
             <Icon iconName={iconName}/>
             <Nav/>
+            <HomeIcon/>
             <Detail message="open 7 days a week // 250.763.2988"/>
         </div>
     </body>

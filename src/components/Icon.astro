@@ -9,8 +9,8 @@ interface Props {
 
 const {iconName} = Astro.props;
 
+// handle dynamic icons
 const icons = import.meta.glob<{default: ImageMetadata}>('../assets/icons/*.svg');
-
 let path = `../assets/icons/${iconName}.svg`;
 if (!icons[path]) {
     throw new Error(`Could not find icon (${iconName}) in assets.`);

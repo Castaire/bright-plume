@@ -1,0 +1,40 @@
+---
+
+interface Props {
+    sectionName:    string;
+    href:           string;
+}
+
+const {sectionName, href} = Astro.props;
+
+---
+
+<a href={href}>
+    <div class="menuButton">
+        <p>{sectionName}</p>
+    </div>
+</a>
+
+<style>
+    .menuButton {
+        display: inline-block;
+        width: 160px;
+        margin: auto;
+        margin-bottom: 10px;
+        border: 1px solid #939393;
+        border-radius: 50px;
+        text-align: center;
+    }
+    .menuButton p {
+        display: block;
+        padding: 5px 0px;
+        font-family: "Nunito";
+        font-size: 11px;
+        letter-spacing: 2.5px;
+        font-style: normal;
+    }
+    .menuButton:hover {
+        background-color: #e7e7e7;
+        border-color: #e7e7e7;
+    }
+</style>

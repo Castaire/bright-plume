@@ -1,0 +1,21 @@
+---
+
+import { Image } from "astro:assets";
+import homeIcon from "../assets/home.svg";
+
+---
+
+<a href="/">
+    <button><Image src={homeIcon} alt=""/></button>
+</a>
+
+<style>
+    button {
+        display: block;
+        margin: auto;
+    }
+    img {
+        width: 23px;
+        height: 23px;
+    }
+</style>

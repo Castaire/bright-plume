@@ -1,10 +1,16 @@
 ---
 
+import { Image } from "astro:assets";
+import { ViewTransitions } from 'astro:transitions';
+
 import Detail from '../components/DetailNote.astro';
 import Highlight from '../components/HighlightNote.astro';
 import Icon from '../components/Icon.astro';
-import Nav from '../components/Nav.astro';
 import MenuNav from '../components/MenuNav.astro';
+import SubmenuButton from "../components/menu/SubmenuButton.astro";
+
+
+import HomeIcon from "../components/HomeIcon.astro";
 
 interface Props {
     title:      string;
@@ -23,15 +29,26 @@ const { title, iconName } = Astro.props;
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Permanent+Marker&display=swap" rel="stylesheet">
         <title>{title}</title>
+        <ViewTransitions/>
     </head>
     <body>
-        <div class="main-content">
+        <div class="topbar mobile-only">
+            <Highlight message="our menu!"/>
+            <div class="submenu">
+                <SubmenuButton sectionName="MENU" href="main"/>
+                <SubmenuButton sectionName="COMBO / SETS" href="combos-sets" />
+                <SubmenuButton sectionName="TRADITIONAL" href="traditional"/>
+                <SubmenuButton sectionName="DRINKS / DESSERTS" href="drinks-desserts"/>
+            </div>
+        </div>
+        <div class="main-content" transition:animate="slide">
             <slot/>
         </div>
-        <div class="sidebar">
+        <div class="sidebar" transition:animate="none">
             <Highlight message="our menu!"/>
             <Icon iconName={iconName}/>
             <MenuNav/>
+            <HomeIcon/>
             <Detail message="open 7 days a week // 250.763.2988"/>
         </div>
     </body>
@@ -47,7 +64,50 @@ const { title, iconName } = Astro.props;
         right: 0;
         height: 100vh;
         width: 30%;
+        min-width: 300px;
         max-width: 400px;
         background-color: #fff2d1;
+    }
+    .mobile-only {
+        display: none;
+        height: 0px;
+        width: 0px;
+    }
+
+    /* hamburger time :) */
+    @media(max-width: 800px) {
+        .main-content {
+            position: relative;
+            top: 200px;
+            width: 100%;
+        }
+        .sidebar {
+            display: none;
+            width: 0px;
+        }
+        .submenu {
+            margin-left: 10px;
+            margin-right: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .topbar {
+            display: block;
+            position: fixed;
+            height: 200px;
+            width: 100%;
+            background-color: white;
+            z-index: 2;
+        }
+        .menu-toggle {
+            display: block;
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            height: 130px;
+            width: 130px;
+            z-index: 2;
+        }
     }
 </style>
