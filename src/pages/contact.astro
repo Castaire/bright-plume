@@ -5,9 +5,7 @@ import Details from '../components/Details.astro';
 
 // setup embedded maps
 const mapApiKey = import.meta.env.MAPS_API_KEY;
-let mapUrl = `https://www.google.com/maps/embed/v1/place?key=${mapApiKey}&q=Eiffel+Tower,Paris+France`
-let mapDirUrl = "https://www.google.com/maps/dir//Eiffel+Tower,Paris+France"
-
+let mapUrl = `https://www.google.com/maps/embed/v1/place?key=${mapApiKey}&q=Eiffel+Tower,Paris+France`;
 ---
 
 <ColumnLayout title="CONTACT", iconName="marker">
@@ -23,7 +21,7 @@ let mapDirUrl = "https://www.google.com/maps/dir//Eiffel+Tower,Paris+France"
 <style>
     .map {
         grid-column-start: 1;
-        height: inherit;
+        height: 100%;
     }
     .map iframe {
         width: 100%;

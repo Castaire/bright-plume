@@ -1,6 +1,5 @@
 ---
 
-import { Image } from "astro:assets";
 import { ViewTransitions } from 'astro:transitions';
 
 import Detail from '../components/DetailNote.astro';
@@ -10,8 +9,7 @@ import MenuNav from '../components/MenuNav.astro';
 import SubmenuButton from "../components/menu/SubmenuButton.astro";
 
 
-import HomeIcon from "../components/HomeIcon.astro";
-import HighlightNote from "../components/HighlightNote.astro";
+import HomeIcon from "../components/icons/HomeIcon.astro";
 
 interface Props {
     title:      string;
@@ -34,10 +32,7 @@ const { title, iconName } = Astro.props;
     </head>
     <body>
         <div class="topbar minimized">
-            <div 
-            <div id="home-icon">
-                <HomeIcon inMenu={true}/>
-            </div>
+            <HomeIcon inMenu={true}/>
             <Highlight message="our menu!"/>
             <div class="submenu">
                 <SubmenuButton sectionName="MENU" href="main"/>
@@ -84,6 +79,7 @@ const { title, iconName } = Astro.props;
         .sidebar {
             display: none;
             width: 0px;
+            height: 0px;
         }
         .main-content {
             position: relative;
@@ -97,14 +93,6 @@ const { title, iconName } = Astro.props;
             width: 100%;
             background-color: white;
             z-index: 2;
-        }
-        .banner {
-            height: 40px;
-            opacity: 50%;
-            text-align: right;
-        }
-        .banner p {
-            border: 1px solid red;
         }
         .submenu {
             margin-left: 10px;

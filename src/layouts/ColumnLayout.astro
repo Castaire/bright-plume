@@ -3,8 +3,9 @@
 import { ViewTransitions } from 'astro:transitions';
 import Detail from '../components/DetailNote.astro';
 import Highlight from '../components/HighlightNote.astro';
-import HomeIcon from '../components/HomeIcon.astro';
+import HomeIcon from '../components/icons/HomeIcon.astro';
 import Icon from '../components/Icon.astro';
+import MenuIcon from '../components/icons/MenuIcon.astro';
 import Nav from '../components/Nav.astro';
 
 interface Props {
@@ -27,6 +28,9 @@ const { title, iconName } = Astro.props;
         <ViewTransitions/>
     </head>
     <body>
+        <div class="minimized">
+            <MenuIcon transition:name='icon' prevURL={Astro.url.href}/>
+        </div>
         <div id="bar1" transition:animate="fade">
             <slot name="column1"/>
         </div>
@@ -43,16 +47,22 @@ const { title, iconName } = Astro.props;
     </body>
 </html>
 <style>
+    .minimized {
+        display: none;
+        height: 0px;
+        width: 0px;
+    }
     body {
-        display: grid;
-        grid-template-columns: 35% 35% 30%;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
     }
     #bar1 {
-        grid-column-start: 1;
+        width: 35%;
         height: 100vh;
     }
     #bar2 {
-        grid-column-start: 2;
+        width: 35%;
         height: 100vh;
     }
     .sidebar {
@@ -64,5 +74,24 @@ const { title, iconName } = Astro.props;
         min-width: 300px;
         max-width: 400px;
         background-color: #fff2d1;
+    }
+    /* hamburger time :) */
+    @media(max-width: 900px) {
+        .sidebar {
+            display: none;
+            width: 0px;
+            height: 0px;
+        }
+        #bar1 {
+            width: 100%;
+            height: 50%;
+        }
+        #bar2 {
+            width: 100%;
+            height: 50%;
+        }
+        .minimized {
+            display: block; /* re-enable display */
+        }
     }
 </style>

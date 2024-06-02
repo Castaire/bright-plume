@@ -3,8 +3,9 @@
 import { ViewTransitions } from 'astro:transitions';
 import Detail from '../components/DetailNote.astro';
 import Highlight from '../components/HighlightNote.astro';
-import HomeIcon from '../components/HomeIcon.astro';
+import HomeIcon from '../components/icons/HomeIcon.astro';
 import Icon from '../components/Icon.astro';
+import MenuIcon from '../components/icons/MenuIcon.astro';
 import Nav from '../components/Nav.astro';
 
 interface Props {
@@ -27,6 +28,9 @@ const { title, iconName } = Astro.props;
         <ViewTransitions/>
     </head>
     <body>
+        <div class="minimized">
+            <MenuIcon transition:name='icon' prevURL={Astro.url.href}/>
+        </div>
         <div class="main-content" transition:animate="fade">
             <slot/>
         </div>
@@ -40,6 +44,11 @@ const { title, iconName } = Astro.props;
     </body>
 </html>
 <style>
+    .minimized {
+        display: none;
+        height: 0px;
+        width: 0px;
+    }
     .main-content {
         height: 100vh;
         padding-right: 15px;
@@ -57,7 +66,19 @@ const { title, iconName } = Astro.props;
     }
 
     /* hamburger time :) */
-    @media(max-width: 800px) {
-
+    @media(max-width: 900px) {
+        .sidebar {
+            display: none;
+            width: 0px;
+            height: 0px;
+        }
+        .main-content {
+            height: 100vh;
+            width: 100%;
+            padding-right: 0px;
+        }
+        .minimized {
+            display: block; /* re-enable display */
+        }
     }
 </style>

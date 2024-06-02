@@ -1,7 +1,7 @@
 ---
 
 import { Image } from "astro:assets";
-import homeIcon from "../assets/home.svg";
+import homeIcon from "../../assets/home.svg";
 
 interface Props {
     inMenu:   boolean;
@@ -52,6 +52,7 @@ const {inMenu} = Astro.props;
         }
         .in-menu.homeButton:hover {
             background-color: #bed5ba;
+            border-color: #bed5ba;
             filter: drop-shadow(3px -3px 3px rgba(0, 0, 0, 0.2));
         }
     }

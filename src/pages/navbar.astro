@@ -1,0 +1,21 @@
+---
+
+import BlankLayout from '../layouts/BlankLayout.astro';
+
+import Nav from '../components/Nav.astro';
+import ExitIcon from '../components/icons/ExitIcon.astro';
+
+---
+
+<BlankLayout title="Mr. Lu's Kitchen">
+    <div class="nav-wrapper">
+        <Nav transition:animate="fade"/>
+    </div>
+    <ExitIcon href={Astro.url.origin}/>
+</BlankLayout>
+
+<style>
+    .nav-wrapper {
+        margin-top: 25%;
+    }
+</style>

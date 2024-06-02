@@ -1,0 +1,33 @@
+---
+
+import { Image } from "astro:assets";
+import crossIcon from '../../assets/cross.svg';
+
+---
+
+<div class="exitButton">
+    <a href='/' id="link">
+        <Image src={crossIcon} alt=""/>
+    </a>
+</div>
+
+<style>
+    .exitButton {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: auto;
+    }
+    img {
+        margin: 10px;
+        height: 35px;
+        width: 35px;
+    }
+    .exitButton:hover {
+        cursor: pointer;
+        background-color: #d6d5d5;
+        border-color: #d6d5d5;
+        border-radius: 25%;
+    }
+</style>

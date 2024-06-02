@@ -28,6 +28,7 @@ import Details from '../components/Details.astro';
             </div>
         </div>
     </div>
+    <div class="rule"/>
 </StandardLayout>
 
 <style>
@@ -65,18 +66,30 @@ import Details from '../components/Details.astro';
     }
     .backdrop {
         margin-left: 15px;
-        background-color: #eaeeff;
+        margin-bottom: 50px;
+        background-color: #c8d8cc;
         border: 1px solid white;
     }
     .box {
         margin: 50px 50px;
         padding: 15px;
         padding-left: 30px;
-        border: 10px double #eaeeff;
+        border: 10px double #c8d8cc;
         background-color: white;
     }
     .wrapper {
         border-left: 15px solid #F7E079;
         padding: 25px 50px;
+    }
+
+    /* hamburger time :) */
+    @media(max-width: 900px) {
+        .backdrop {
+            margin-left: 0px;
+        }
+        .caption {
+            /* TODO */
+            margin-top: 50px;
+        }
     }
 </style>
