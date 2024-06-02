@@ -1,33 +1,23 @@
 ---
-
-interface Props {
-    company:    string;
-    street:     string;
-    area:       string;
-    postalCode: string;
-    hours:      string;
-    phone1:     string;
-    phone2:     string;
-    mapDirUrl:  string;
-}
-
-const {company, street, area, postalCode, hours, phone1, phone2, mapDirUrl} = Astro.props;
+const mapDirUrl = "https://www.google.com/maps/dir//Eiffel+Tower,Paris+France";
 ---
 
-<p class="title-text btm-margin-20">{company}</p>
-<p class="common-text btm-margin-20">
-    {street}<br>{area}<br>{postalCode}
-</p>
-<p class="common-text inline label btm-margin-10">
-    EVERY DAY
-</p>
-<p class="common-text inline btm-margin-10">{hours}</p>
-<div class="btm-margin-10">
-    <a href={mapDirUrl} class="common-text label">
-        <u>GET DIRECTIONS</u>
-    </a>
+<div class="details">
+    <p class="title-text btm-margin-20">MR LU'S KITCHEN</p>
+    <p class="common-text btm-margin-20">
+        #101 - 2689 Pandosy Street<br>Kelowna, BC<br>V1Y 9V9
+    </p>
+    <p class="common-text inline label btm-margin-10">
+        EVERY DAY
+    </p>
+    <p class="common-text inline btm-margin-10">11am - 9pm</p>
+    <div class="btm-margin-10">
+        <a href={mapDirUrl} class="common-text label">
+            <u>GET DIRECTIONS</u>
+        </a>
+    </div>
+    <p class="common-text">250.763.2988 &nbsp;/&nbsp; 250.763.2986</p>
 </div>
-<p class="common-text">{phone1} &nbsp;/&nbsp; {phone2}</p>
 
 <style>
     .title-text {
@@ -39,7 +29,7 @@ const {company, street, area, postalCode, hours, phone1, phone2, mapDirUrl} = As
         font-family: "Noto Sans";
         font-weight: 300;
         font-style: normal;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 25px;
         letter-spacing: 0.06em;
     }

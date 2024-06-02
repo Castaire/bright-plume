@@ -56,8 +56,13 @@ const { title, iconName } = Astro.props;
         height: 100vh;
     }
     .sidebar {
-        grid-column-start: 3;
+        position: fixed;
+        top: 0;
+        right: 0;
         height: 100vh;
+        width: 30%;
+        min-width: 300px;
+        max-width: 400px;
         background-color: #fff2d1;
     }
 </style>

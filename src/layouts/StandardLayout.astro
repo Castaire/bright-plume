@@ -41,6 +41,8 @@ const { title, iconName } = Astro.props;
 </html>
 <style>
     .main-content {
+        height: 100vh;
+        padding-right: 15px;
         width: 70%;
     }
     .sidebar {
@@ -49,6 +51,13 @@ const { title, iconName } = Astro.props;
         right: 0;
         height: 100vh;
         width: 30%;
+        min-width: 300px;
+        max-width: 400px;
         background-color: #fff2d1;
+    }
+
+    /* hamburger time :) */
+    @media(max-width: 800px) {
+
     }
 </style>

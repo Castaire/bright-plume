@@ -1,57 +1,82 @@
 ---
 
 import { Image } from 'astro:assets';
-import wokImg from "../assets/wok-spread.jpg"
+import wokImg from "../assets/wok-spread.jpg";
+import logo  from "../assets/logo-wide.png";
 
 import StandardLayout from '../layouts/StandardLayout.astro';
+import Details from '../components/Details.astro';
 
 ---
 
 <StandardLayout title="Mr. Lu's Kitchen", iconName="chef">
-    <Image src={wokImg} alt=""/>
     <div class="splash">
-        <h3 class="splash-text">THIS IS</h3>
-        <h2 class="splash-text">MR LU'S KITCHEN !</h2>
+        <Image src={wokImg} alt="" id="splash-img"/>
+        <Image src={logo} alt="" id="logo-img"/>
     </div>
-    <p>serving up traditional Szechuan cuisine with a modern twist, from us to you</p>
+    <div class="caption">
+        <p>
+            serving up traditional Szechuan cuisine with a modern twist,<br/> from us to you.
+            <br/><br/>** Come join us as we celebrate our grand opening on <b><u>Monday June 3rd</u></b>! **
+        </p>
+    </div>
+    <div class="rule"/>
+    <div class="backdrop">
+        <div class="box">
+            <div class="wrapper">
+                <Details/>
+            </div>
+        </div>
+    </div>
 </StandardLayout>
 
 <style>
-    img {
-        display: block;
-        padding-right: 15px;
-        height: 75%;
+    .splash {
+        width: 100%;
+    }
+    #splash-img {
         opacity: 90%;
     }
-    .splash {
+    #logo-img {
         position: relative;
-        top: -180px;
-        margin-bottom: -180px;
-        z-index: 5;
+        top: -145px;
+        width: 90%;
+        margin: auto;
+        margin-bottom: -140px;
+        opacity: 85%;
+        border: 20px solid white;
     }
-    h3 {
-        font-size: 50px;
-        letter-spacing: 5px;
+    .caption {
+        margin-top: 20px;
+        text-align: right;
+        border-right: 15px solid #F7E079;
     }
-    h2 {
-        font-size: 60px;
-        letter-spacing: 6px;
-    }
-    p {
-        display: block;
-        padding: 30px 0px 0px 30px;
+    .caption p {
+        padding: 15px 20px 15px 45px;
         font-family: "Nanum Pen Script", cursive;
-        font-size: 23px;
+        font-size: 20px;
         letter-spacing: 1.25px;
         font-style: normal;
     }
-    .splash-text {
-        display: block;
-        font-family: "Permanent Marker", cursive;
-        font-weight: 400;
-        text-align: center;
-        margin-right: 15px;
-        color: #FFFFFF;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    .rule {
+        margin: 50px auto;
+        width: 75%;
+        border-bottom: 7px dotted #d6d5d5;
+    }
+    .backdrop {
+        margin-left: 15px;
+        background-color: #eaeeff;
+        border: 1px solid white;
+    }
+    .box {
+        margin: 50px 50px;
+        padding: 15px;
+        padding-left: 30px;
+        border: 10px double #eaeeff;
+        background-color: white;
+    }
+    .wrapper {
+        border-left: 15px solid #F7E079;
+        padding: 25px 50px;
     }
 </style>

@@ -9,7 +9,6 @@ interface Props {
 
 const {inMenu} = Astro.props;
 ---
-
 {
     inMenu ? 
     <div class="homeButton in-menu">
@@ -17,7 +16,7 @@ const {inMenu} = Astro.props;
             <Image src={homeIcon} alt="" class="in-menu"/>
         </a>
     </div> :
-    <div class="homeButton">
+    <div class="homeButton out-menu">
         <a href="/">
             <Image src={homeIcon} alt=""/>
         </a>
@@ -26,6 +25,9 @@ const {inMenu} = Astro.props;
 <style>
     .homeButton {
         margin: auto;
+        width: 100%;
+        position: absolute;
+        bottom: 150px;
     }
 
     img {
@@ -41,9 +43,10 @@ const {inMenu} = Astro.props;
             margin: 12px;
         }
         .in-menu.homeButton {
-            position: absolute;
+            width: auto;
             top: 30px;
             right: 30px;
+            bottom: auto; /*reset positioning*/
             border: 1px solid white;
             border-radius: 25%;
         }
