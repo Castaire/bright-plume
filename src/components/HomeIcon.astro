@@ -3,19 +3,53 @@
 import { Image } from "astro:assets";
 import homeIcon from "../assets/home.svg";
 
+interface Props {
+    inMenu:   boolean;
+}
+
+const {inMenu} = Astro.props;
 ---
 
-<a href="/">
-    <button><Image src={homeIcon} alt=""/></button>
-</a>
-
+{
+    inMenu ? 
+    <div class="homeButton in-menu">
+        <a href="/" class="in-menu">
+            <Image src={homeIcon} alt="" class="in-menu"/>
+        </a>
+    </div> :
+    <div class="homeButton">
+        <a href="/">
+            <Image src={homeIcon} alt=""/>
+        </a>
+    </div>
+}
 <style>
-    button {
-        display: block;
+    .homeButton {
         margin: auto;
     }
+
     img {
+        margin: auto;
         width: 23px;
         height: 23px;
+    }
+
+    @media(max-width: 800px) {
+        .in-menu img {
+            height: 23px;
+            width: 23px;
+            margin: 12px;
+        }
+        .in-menu.homeButton {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            border: 1px solid white;
+            border-radius: 25%;
+        }
+        .in-menu.homeButton:hover {
+            background-color: #bed5ba;
+            filter: drop-shadow(3px -3px 3px rgba(0, 0, 0, 0.2));
+        }
     }
 </style>

@@ -11,6 +11,7 @@ import SubmenuButton from "../components/menu/SubmenuButton.astro";
 
 
 import HomeIcon from "../components/HomeIcon.astro";
+import HighlightNote from "../components/HighlightNote.astro";
 
 interface Props {
     title:      string;
@@ -32,7 +33,11 @@ const { title, iconName } = Astro.props;
         <ViewTransitions/>
     </head>
     <body>
-        <div class="topbar mobile-only">
+        <div class="topbar minimized">
+            <div 
+            <div id="home-icon">
+                <HomeIcon inMenu={true}/>
+            </div>
             <Highlight message="our menu!"/>
             <div class="submenu">
                 <SubmenuButton sectionName="MENU" href="main"/>
@@ -48,7 +53,7 @@ const { title, iconName } = Astro.props;
             <Highlight message="our menu!"/>
             <Icon iconName={iconName}/>
             <MenuNav/>
-            <HomeIcon/>
+            <HomeIcon inMenu={true}/>
             <Detail message="open 7 days a week // 250.763.2988"/>
         </div>
     </body>
@@ -68,7 +73,7 @@ const { title, iconName } = Astro.props;
         max-width: 400px;
         background-color: #fff2d1;
     }
-    .mobile-only {
+    .minimized {
         display: none;
         height: 0px;
         width: 0px;
@@ -76,21 +81,14 @@ const { title, iconName } = Astro.props;
 
     /* hamburger time :) */
     @media(max-width: 800px) {
-        .main-content {
-            position: relative;
-            top: 200px;
-            width: 100%;
-        }
         .sidebar {
             display: none;
             width: 0px;
         }
-        .submenu {
-            margin-left: 10px;
-            margin-right: 10px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+        .main-content {
+            position: relative;
+            top: 200px;
+            width: 100%;
         }
         .topbar {
             display: block;
@@ -100,14 +98,21 @@ const { title, iconName } = Astro.props;
             background-color: white;
             z-index: 2;
         }
-        .menu-toggle {
-            display: block;
-            position: fixed;
-            bottom: 0px;
-            right: 0px;
-            height: 130px;
-            width: 130px;
-            z-index: 2;
+        .banner {
+            height: 40px;
+            opacity: 50%;
+            text-align: right;
+        }
+        .banner p {
+            border: 1px solid red;
+        }
+        .submenu {
+            margin-left: 10px;
+            margin-right: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-content: space-around;
         }
     }
 </style>
