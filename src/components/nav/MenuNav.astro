@@ -3,10 +3,10 @@
 ---
 
 <div class="nav-list">
-    <a href="./main" class="nav-link">MENU</a>
-    <a href="./contact/" class="nav-link">CONTACT</a>
-    <a href="./about/" class="nav-link">ABOUT</a>
-    <a href="./socials/" class="nav-link">SOCIALS</a>
+    <a href="/menu/main" class="nav-link">MAIN</a>
+    <a href="/menu/combos-sets" class="nav-link">COMBOS / SETS</a>
+    <a href="/menu/traditional" class="nav-link">TRADITIONAL</a>
+    <a href="/menu/drinks-desserts" class="nav-link">DRINKS / DESSERTS</a>
 </div>
 <style>
     .nav-list {
@@ -30,5 +30,11 @@
     }
     .nav-link:hover {
         border-color: black;
+    }
+    
+    @media(max-width: 1000px) {
+        .nav-link {
+            font-size: 15px;
+        }
     }
 </style>

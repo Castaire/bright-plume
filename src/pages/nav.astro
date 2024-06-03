@@ -2,14 +2,14 @@
 
 import BlankLayout from '../layouts/BlankLayout.astro';
 
-import Nav from '../components/Nav.astro';
+import SiteNav from '../components/nav/SiteNav.astro';
 import ExitIcon from '../components/icons/ExitIcon.astro';
 
 ---
 
 <BlankLayout title="Mr. Lu's Kitchen">
     <div class="nav-wrapper">
-        <Nav transition:animate="fade"/>
+        <SiteNav transition:animate="fade"/>
     </div>
     <ExitIcon href={Astro.url.origin}/>
 </BlankLayout>
