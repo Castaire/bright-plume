@@ -3,31 +3,38 @@
 import ColumnLayout from '../layouts/ColumnLayout.astro';
 
 import { Image } from 'astro:assets';
-import fluidImg from "../assets/fluid-spread.jpg";
+import kitchenImg from "../assets/cozy-kitchen.jpg";
 import * as about from '../data/about.md';
 
 ---
 
 <ColumnLayout title="ABOUT", iconName="chef">
-    <Image src={fluidImg} alt="" slot="column1"/>
+    <Image src={kitchenImg} alt="" slot="column1"/>
     <div class="content noto-sans" slot="column2">
         <hr>
-        <Fragment set:html={about.compiledContent()}/>
+        <div class="about">
+            <Fragment set:html={about.compiledContent()}/>
+        </div>
         <p class="signoff noto-sans">- {about.frontmatter.signoff} -</p>
         <hr>
     </div>
 </ColumnLayout>
 
 <style>
-    .content {
+    img {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         padding: 25px;
         text-align: left;
-        font-size: 14px;
-        letter-spacing: 0.04em;
+    }
+    .content {
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        padding: 30px;
     }
     hr {
         height: 3px;
@@ -36,17 +43,45 @@ import * as about from '../data/about.md';
         background-color: #605C4E;
         color: #605C4E;
     }
+    .about {
+        font-size: 13px;
+    }
     .signoff {
         margin: auto;
         margin-top: 30px;
         color: #939393;
         text-align: center;
         letter-spacing: 0.08em;
+        font-size: 13px;
     }
     .noto-sans {
         font-family: "Noto Sans", sans-serif;
         font-optical-sizing: auto;
         font-weight: 300;
         font-style: normal;
+        letter-spacing: 0.04em;
+    }
+
+    /* hamburger time :) */
+    @media(max-width: 900px) {
+        img {
+            margin: 25px auto;
+            padding: none;
+            width: auto;
+            position: static;
+            transform: none;
+            -ms-transform: none;
+            max-height: 100%;
+        }
+        hr {
+            margin: 25px;
+        }
+        .content {
+            margin: auto;
+            width: 70%;
+            position: static;
+            transform: none;
+            -ms-transform: none;
+        }
     }
 </style>  

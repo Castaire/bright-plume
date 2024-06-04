@@ -16,12 +16,15 @@ import Details from '../components/Details.astro';
     </div>
     <div class="caption">
         <p>
-            serving up traditional Szechuan cuisine with a modern twist,<br/> from us to you.
+            serving up traditional Szechuan and Hunan cuisine with a modern twist,<br/> from us to you.
             <br/><br/>** Come join us as we celebrate our grand opening on <b><u>Monday June 18th</u></b>! **
         </p>
     </div>
     <div class="rule"/>
     <div class="backdrop">
+        <div class="title">
+            <p>AND WE'RE HERE!</p>
+        </div>
         <div class="box">
             <div class="wrapper">
                 <Details/>
@@ -70,8 +73,22 @@ import Details from '../components/Details.astro';
         background-color: #c8d8cc;
         border: 1px solid white;
     }
+    .title {
+        margin: 15px auto;
+        width: 300px;
+        border: 3px solid white;
+        text-align: center;
+        font-family: "Nunito";
+        letter-spacing: 2.5px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .title p {
+        padding: 10px;
+    }
     .box {
-        margin: 50px 50px;
+        margin: 50px;
+        margin-top: 0px;
         padding: 15px;
         padding-left: 30px;
         border: 10px double #c8d8cc;
@@ -82,14 +99,44 @@ import Details from '../components/Details.astro';
         padding: 25px 50px;
     }
 
+    @media(max-width: 940px) {
+        .box {
+            margin: 30px;
+            margin-top: 0px;
+        }
+    }
+
     /* hamburger time :) */
     @media(max-width: 900px) {
         .backdrop {
             margin-left: 0px;
         }
         .caption {
-            /* TODO */
             margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+
+    /* small screens */
+    @media(max-width: 550px) {
+        .box {
+            margin-left: 0px;
+            margin-right: 0px;
+            border-top-width: 20px;
+            border-bottom-width: 20px;
+            border-right: none;
+            border-left: none;
+        }
+        .caption {
+            margin-top: 70px;
+        }
+        #logo-img {
+            width: 100%;
+            top: -125px;
+            border-top-width: 15px;
+            border-bottom-width: 15px;
+            border-right-width: 0px;
+            border-left-width: 0px;
         }
     }
 </style>

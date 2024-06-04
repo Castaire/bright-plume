@@ -34,6 +34,7 @@ const { title, iconName } = Astro.props;
         <div class="topbar minimized">
             <HomeIcon inMenu={true}/>
             <Highlight message="our menu!"/>
+            <div class="banner">open 7 days a week // 250.763.2988</div>
             <div class="submenu">
                 <SubmenuButton sectionName="MENU" href="main"/>
                 <SubmenuButton sectionName="COMBO / SETS" href="combos-sets" />
@@ -83,13 +84,13 @@ const { title, iconName } = Astro.props;
         }
         .main-content {
             position: relative;
-            top: 200px;
+            top: 220px;
             width: 100%;
         }
         .topbar {
             display: block;
             position: fixed;
-            height: 200px;
+            height: 220px;
             width: 100%;
             background-color: white;
             z-index: 2;
@@ -101,6 +102,16 @@ const { title, iconName } = Astro.props;
             flex-wrap: wrap;
             gap: 5px;
             justify-content: space-around;
+        }
+        .banner {
+            display: block;
+            margin-top: -20px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-family: "Nanum Pen Script";
+            font-size: 20px;
+            letter-spacing: 2.5px;
+            font-style: normal;
         }
     }
 </style>

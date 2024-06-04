@@ -1,12 +1,10 @@
 ---
 
-signoff: CONVALS SED SAGITTIS
+signoff: MR. LU, signing off
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis sem  mi. Duis tellus urna, blandit id lobortis sit amet, tempus vitae elit.
-<br><br>
-Aliquam erat volutpat. Donec fringilla dolor non dui auctor, ac vehicula  magna bibendum.
-<br><br>
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vitae  lectus felis. Donec congue justo ut risus bibendum scelerisque. Aliquam  euismod, neque sed lobortis accumsan, elit ipsum rhoncus ex, in  elementum lorem enim ut dolor. Ut id magna a metus feugiat ultricies  eget ut nisi. Phasellus mattis eu dolor non feugiat. Etiam vehicula  feugiat ex, vel convallis metus iaculis eget. Sed ultrices dolor et quam  sagittis auctor.
+Hey Kelowna!<br/><br/>We are really excited to be here!<br/>Ending our extended search, my family and I have finally found a cozy and functional space in this city to make our mark on the local cuisine.<br/><br/>We offer all the well-loved staples as well as traditional specialty dishes commonly enjoyed in the Sichuan and Hunan provinces.
+<br/></br>
+With 20 years of professional experience, we will be putting our best <strike>foot</strike> food forwards from this kitchen. Thanks for visiting us!<br/><br/>Please join us for our grand opening on <b>June 18th</b>!
 
