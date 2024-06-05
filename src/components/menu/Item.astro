@@ -28,6 +28,7 @@ const {name, description, choices, price, isSpicy} = Astro.props;
         {
             choices === undefined ? 
             <p class="desc">{description}</p> :
+            <p class="desc">{description}</p>
             <p class="desc ib">choose [1]:</p>
             <p class="choice ib">{choices}</p>
         }

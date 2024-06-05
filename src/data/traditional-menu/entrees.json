@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Spicy Fish Fillet in Chili Broth",
+        "price": 26.95,
+        "isSpicy": true,
+        "desc": "水煮魚"
+    },
+    {
+        "name": "Spicy Sliced Beef in Chili Broth",
+        "price": 26.95,
+        "isSpicy": true,
+        "desc": "水煮牛肉"
+    },
+    {
+        "name": "Spicy Cumin Lamb",
+        "price": 26.95,
+        "isSpicy": true,
+        "desc": "孜然羊肉"
+    },
+    {
+        "name": "Braised Sea Cucumber with Green Onion",
+        "price": 48.00,
+        "desc": "蔥爆海參"
+    },
+    {
+        "name": "Chongqing Chili Pepper Chicken",
+        "price": 26.95,
+        "isSpicy": true,
+        "desc": "重慶辣子雞"
+    },
+    {
+        "name": "Griddle-cooked Spicy Meat & Veggies",
+        "price": 24.95,
+        "isSpicy": true,
+        "desc": "麻辣香鍋"
+    },
+    {
+        "name": "Ma Po Tofu with Beef",
+        "price": 15.95,
+        "isSpicy": true,
+        "desc": "麻婆豆腐"
+    },
+    {
+        "name": "Spicy & Sour Shredded Potato",
+        "price": 15.95,
+        "isSpicy": true,
+        "desc": "醋辣土豆絲"
+    },
+    {
+        "name": "Eggplant in Chili Garlic Sauce",
+        "price": 18.95,
+        "isSpicy": true,
+        "desc": "漁香茄子"
+    },
+    {
+        "name": "Sichuan Pork Belly with Chili",
+        "price": 18.95,
+        "isSpicy": true,
+        "desc": "四川小炒"
+    },
+    {
+        "name": "Braised Beef Brisket with Daikon",
+        "price": 23.95,
+        "desc": "牛腩蘿蔔"
+    },
+    {
+        "name": "Sauteed Shanghai Bok Choy",
+        "price": 14.95,
+        "desc": "清炒上海青"
+    },
+    {
+        "name": "Sauteed Gai Lan",
+        "price": 16.95,
+        "desc": "清炒芥蘭"
+    },
+    {
+        "name": "Beef Tripe & Pork Offals in Spicy Broth",
+        "price": 26.95,
+        "isSpicy": true,
+        "desc": "毛血旺"
+    }
+]

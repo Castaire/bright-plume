@@ -1,33 +1,65 @@
 ---
 
 import MenuLayout from '../../layouts/MenuLayout.astro';
+import Section from '../../components/menu/Section.astro';
+import Item from '../../components/menu/Item.astro';
+
+import coldDishes from '../../data/traditional-menu/cold-dishes.json';
+import entrees from '../../data/traditional-menu/entrees.json';
+import staples from '../../data/traditional-menu/staples.json';
 
 ---
 
 <MenuLayout title="TRADITIONAL" iconName="menu">
-    <div class="message">COMING SOON!</div>
+    <div class="menu">
+        <Section title="COLD DISHES &nbsp;//&nbsp; 涼菜"/>
+        <div class="container">
+            {coldDishes.map(
+                (i) => <Item name={i.name}
+                    price={i.price}
+                    isSpicy={i.isSpicy}
+                    description={i.desc}/>
+            )}
+        </div>
+        <Section title="STAPLES &nbsp;//&nbsp; 主食類"/>
+        <div class="container">
+            {staples.map(
+                (i) => <Item name={i.name}
+                    price={i.price}
+                    choices={i.choices}
+                    isSpicy={i.isSpicy}
+                    description={i.desc}
+                />
+            )}
+        </div>
+        <Section title="ENTREES &nbsp;//&nbsp; 川湘風味"/>
+        <div class="container">
+            {entrees.map(
+                (i) => <Item name={i.name}
+                    price={i.price}
+                    isSpicy={i.isSpicy}
+                    description={i.desc}
+                />
+            )}
+        </div>
+    </div>"
 </MenuLayout>
 
 <style>
-    .message {
-        display: block;
-        position: relative;
-        top: 50%;
-        -ms-transform: translate(-50%);
-        transform: translateY(-50);
-        text-align: center;
-        font-family: "Permanent Marker";
-        font-weight: 400;
-        font-size: 30px;
-        letter-spacing: 0.1em;
-        font-style: normal;
-        color: #363020;
+    .menu {
+        padding: 35px 70px;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 35px;
+        margin-bottom: 35px;
     }
 
-    @media(max-width:800px) {
-        .message {
-            width: 100%;
-            top: 25%;
+    @media(max-width: 800px) {
+        .container {
+            column-gap: 15px;
         }
     }
 </style>
