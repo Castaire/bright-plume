@@ -34,14 +34,5 @@
             "Sweet & Sour Pork",
             "Beef Chop Suey"
         ]
-    },
-    {
-        "name": "#5",
-        "price": 16.95,
-        "items": [
-            "Veggie Fried Rice",
-            "Veggie Chop Suey",
-            "Veggie Chow Mein"
-        ]
     }
 ]
