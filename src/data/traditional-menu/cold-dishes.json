@@ -1,35 +1,35 @@
 [
     {
-        "name": "Cucumber with Sesame Sauce",
+        "name": "CUCUMBER WITH SESAME SAUCE",
         "price": 11.95,
         "desc": "麻醬黃瓜"
     },
     {
-        "name": "Chilled Spicy Bok Choy",
+        "name": "CHILLED SPICY BOK CHOY",
         "price": 11.95,
         "isSpicy": true,
         "desc": "拌白菜"
     },
     {
-        "name": "Chilled Spicy Bean Curd",
+        "name": "CHILLED SPICY BEAN CURD",
         "price": 13.95,
         "isSpicy": true,
         "desc": "拌豆腐絲"
     },
     {
-        "name": "Spicy Beef Honeycomb Tripe",
+        "name": "SPICY BEEF HONEYCOMB TRIPE",
         "price": 21.95,
         "isSpicy": true,
         "desc": "拌金錢肚"
     },
     {
-        "name": "Chilled Spicy Beef Omasum",
+        "name": "CHILLED SPICY BEEF OMASUM",
         "price": 19.95,
         "isSpicy": true,
         "desc": "拌牛百葉"
     },
     {
-        "name": "Beef Shank Slices",
+        "name": "BEEF SHANK SLICES",
         "price": 16.95,
         "desc": "醬牛腱"
     }

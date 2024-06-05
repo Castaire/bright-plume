@@ -53,13 +53,22 @@ import staples from '../../data/traditional-menu/staples.json';
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        column-gap: 35px;
+        column-gap: 40px;
         margin-bottom: 35px;
     }
 
+    /* hamburger time :) */
     @media(max-width: 800px) {
         .container {
-            column-gap: 15px;
+            column-gap: 20px;
+        }
+    }
+
+    /* small screens */
+    @media(max-width: 550px) {
+        .menu {
+            padding-right: 45px;
+            padding-left: 45px;
         }
     }
 </style>

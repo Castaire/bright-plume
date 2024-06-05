@@ -4,17 +4,18 @@
         "price": 16.95
     },
     {
-        "name": "FRIED WHOLE PRAWNS",
+        "name": "STIR-FRIED WHOLE PRAWNS",
         "price": 19.95,
         "choices": "black bean | curry | szechuan | tomato",
         "isSpicy": true
     },
     {
-        "name": "SCALLOPS WITH SNOW PEA",
-        "price": 20.95
+        "name": "STIR-FRY SNOW PEA",
+        "price": 20.95,
+        "choices": "scallops | shrimp | squid"
     },
     {
-        "name": "SQUID WITH SPICY SALT",
+        "name": "sALT & PEPPER SQUID",
         "price": 19.95,
         "desc": "deep fried | crowd-pleaser :)",
         "isSpicy": true
@@ -24,5 +25,16 @@
         "price": 19.95,
         "desc": "deep fried | shell-on | crowd-pleaser :)",
         "isSpicy": true
+    },
+    {
+        "name": "KUNG PO PRAWNS",
+        "price": 19.95,
+        "desc": "stir-fry | veggies | almonds",
+        "isSpicy": true
+    },
+    {
+        "name": "SEAFOOD TOFU HOT POT",
+        "price": 18.95,
+        "desc": "braised | hot pot"
     }
 ]

@@ -17,7 +17,7 @@
     {
         "name": "CHOW MEIN",
         "price": 14.95,
-        "choices": "beef | chicken | pork | shrimp | veggies"
+        "choices": "beef | chicken | pork | shrimp | mushroom | veggie"
     },
     {
         "name": "TOMATO SAUCE CHOW MEIN",
@@ -28,5 +28,17 @@
         "name": "SHANGHAI NOODLES",
         "price": 15.95,
         "desc": "thick noodles | chicken | veggies"
+    },
+    {
+        "name": "SINGAPORE RICE NOODLES",
+        "price": 15.95,
+        "desc": "dry curry | vermicelli",
+        "isSpicy": true
+    },
+    {
+        "name": "BEEF CHOW FUN",
+        "price": 15.95,
+        "choices": "dry | black bean sauce",
+        "desc": "flat rice noodles | hefty wok hei"
     }
 ]

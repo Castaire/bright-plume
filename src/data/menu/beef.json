@@ -1,0 +1,41 @@
+[
+    {
+        "name": "BEEF CHOW BROCCOLI",
+        "price": 15.95,
+        "desc": "beef | broccoli | haha"
+    },
+    {
+        "name": "BEEF IN BLACK BEAN SAUCE",
+        "price": 16.95
+    },
+    {
+        "name": "BEEF WITH SNOW PEA",
+        "price": 16.95
+    },
+    {
+        "name": "BEEF WITH OYSTER SAUCE",
+        "price": 16.95,
+        "desc": "stir-fry | with veggies"
+    },
+    {
+        "name": "GINGER BEEF",
+        "price": 16.95,
+        "desc": "sweet ginger glazed | sliced peppers",
+        "isSpicy": true
+    },
+    {
+        "name": "SZECHUAN BEEF",
+        "price": 16.95,
+        "desc": "stir-fry | with veggies",
+        "isSpicy": true
+    },
+    {
+        "name": "MONGOLIAN BEEF",
+        "price": 16.95,
+        "isSpicy": true
+    },
+    {
+        "name": "BEEF WITH GINGER & GREEN ONIONS",
+        "price": 17.95
+    }
+]

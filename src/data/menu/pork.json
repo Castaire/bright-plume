@@ -15,8 +15,13 @@
         "choices": "boneless | bone-in (spareribs)"
     },
     {
-        "name": "BBQ PORK",
+        "name": "SLICED BBQ PORK",
         "price": 14.95,
         "desc": "slow-cooked | sweet-glazed"
+    },
+    {
+        "name": "TOFU HOT POT WITH BBQ PORK",
+        "price": 15.95,
+        "desc": "braised | hot pot"
     }
 ]

@@ -1,22 +1,22 @@
 [
     {
-        "name": "Steamed Pork Buns [4]",
+        "name": "STEAMED PORK BUNS [4]",
         "price": 11.95,
         "desc": "豬肉包"
     },
     {
-        "name": "Green Onion Pancakes [4]",
+        "name": "GREEN ONION PANCAKES [4]",
         "price": 12.95,
         "desc": "蔥油餅"
     },
     {
-        "name": "Sichuan Noodles",
+        "name": "SICHUAN NOODLES",
         "price": 10.95,
         "isSpicy": true,
         "desc": "四川拌麵"
     },
     {
-        "name": "Beef Brisket Noodle Soup",
+        "name": "BEEF BRISKET NOODLE SOUP",
         "price": 16.95,
         "choices": "regular | spicy",
         "isSpicy": true,

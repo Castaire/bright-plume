@@ -11,10 +11,10 @@ import rices from "../../data/menu/rice.json";
 import noodles from "../../data/menu/noodles.json";
 import eggs from "../../data/menu/egg.json";
 import veggies from "../../data/menu/veggies.json";
+import beef from "../../data/menu/beef.json"
 import chickens from "../../data/menu/chicken.json";
 import pork from "../../data/menu/pork.json";
 import seafood from "../../data/menu/seafood.json";
-import specialties from "../../data/menu/specialties.json";
 
 ---
 
@@ -73,7 +73,8 @@ import specialties from "../../data/menu/specialties.json";
                 (i) => <Item name={i.name}
                     description={i.desc} 
                     price={i.price}
-                    choices={i.choices}/>
+                    choices={i.choices}
+                    isSpicy={i.isSpicy}/>
             )}
         </div>
         <Section title="EGG FOO YUNG"/>
@@ -93,6 +94,15 @@ import specialties from "../../data/menu/specialties.json";
                     price={i.price}
                     choices={i.choices}
                     isSpicy={i.isSpicy} />
+            )}
+        </div>
+        <Section title="BEEF"/>
+        <div class="container">
+            {beef.map(
+                (i) => <Item name={i.name}
+                    description={i.desc} 
+                    price={i.price}
+                    isSpicy={i.isSpicy}/>
             )}
         </div>
         <Section title="CHICKEN"/>
@@ -117,16 +127,6 @@ import specialties from "../../data/menu/specialties.json";
         <Section title="SEAFOOD"/>
         <div class="container">
             {seafood.map(
-                (i) => <Item name={i.name}
-                    description={i.desc} 
-                    price={i.price}
-                    choices={i.choices}
-                    isSpicy={i.isSpicy} />
-            )}
-        </div>
-        <Section title="OUR SPECIALTIES"/>
-        <div class="container">
-            {specialties.map(
                 (i) => <Item name={i.name}
                     description={i.desc} 
                     price={i.price}

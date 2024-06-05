@@ -7,7 +7,7 @@
     {
         "name": "CHOP SUEY",
         "price": 14.95,
-        "choices": "beef | chicken | pork | shrimp | veggies"
+        "choices": "beef | chicken | pork | shrimp | mushroom | veggie"
     },
     {
         "name": "TOMATO SAUCE CHOP SUEY",
@@ -21,22 +21,8 @@
         "isSpicy": true
     },
     {
-        "name": "BEEF & GREEN PEPPERS IN BLACK BEAN SAUCE",
-        "price": 16.95
-    },
-    {
-        "name": "BEEF CHOW BROCCOLI",
-        "price": 15.95,
-        "desc": "beef | broccoli | haha"
-    },
-    {
-        "name": "STIR-FRIED SNOW PEAS",
+        "name": "DICED CHICKEN WITH CASHEWS",
         "price": 16.95,
-        "choices": "beef | chicken | shrimp"
-    },
-    {
-        "name": "ALMOND GAI DING",
-        "price": 16.95,
-        "desc": "chicken | assorted vegs | almonds"
+        "desc": "stir-fry | veggie-forwards"
     }
 ]
