@@ -3,7 +3,6 @@
 import { ViewTransitions } from 'astro:transitions';
 import Detail from '../components/DetailNote.astro';
 import Highlight from '../components/HighlightNote.astro';
-import HomeIcon from '../components/icons/HomeIcon.astro';
 import Icon from '../components/Icon.astro';
 import MenuIcon from '../components/icons/MenuIcon.astro';
 import Nav from '../components/nav/SiteNav.astro';
@@ -41,7 +40,6 @@ const { title, iconName } = Astro.props;
             <Highlight message="grand opening!"/>
             <Icon iconName={iconName}/>
             <Nav/>
-            <HomeIcon inMenu={false}/>
             <Detail message="open 7 days a week // 250.763.2988"/>
         </div>
     </body>

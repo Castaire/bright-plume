@@ -1,0 +1,49 @@
+---
+
+import { Image } from "astro:assets";
+
+import fbIcon from '../assets/facebook.svg';
+import instaIcon from '../assets/instagram.svg';
+import tiktokIcon from '../assets/tik-tok.svg';
+
+const fbURL = "https://www.facebook.com/profile.php?id=61559886231758&mibextid=LQQJ4d";
+const instaURL = "https://www.instagram.com/mrluskitchen?igsh=cjg5dWFqc29zcWZq&utm_source=qr";
+const tiktokURL = "https://www.tiktok.com/@mrluskitchen?_t=8mKh5k49SyM&_r=1";
+
+---
+
+<div class="social-bar">
+    <p>SOCIALS: </p>
+    <a href={instaURL} target="_blank">
+        <Image src={instaIcon} alt="" class="social-icon"/>
+    </a>
+    <a href={fbURL} target="_blank">
+        <Image src={fbIcon} alt="" class="social-icon"/>
+    </a>
+    <a href={tiktokURL} target="_blank">
+        <Image src={tiktokIcon} alt="" class="social-icon"/>
+    </a>
+</div>
+
+<style>
+    .social-bar {
+        display: flex;
+        gap: 15px;
+        margin-top: 35px;
+    }
+    .social-bar p {
+        display: inline-block;
+        font-family: "Noto Sans";
+        font-weight: 300;
+        font-style: normal;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 0.06em;
+        color: #939393;
+    }
+    .social-icon {
+        opacity: 75%;
+        width: 18px; 
+        height: 18px;
+    }
+</style>

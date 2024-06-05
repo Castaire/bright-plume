@@ -2,6 +2,7 @@
 
 import ColumnLayout from '../layouts/ColumnLayout.astro';
 import Details from '../components/Details.astro';
+import SocialBar from '../components/SocialBar.astro';
 
 // setup embedded maps
 const mapApiKey = import.meta.env.MAPS_API_KEY;
@@ -15,6 +16,7 @@ let mapUrl = `https://www.google.com/maps/embed/v1/place?key=${mapApiKey}&q=Eiff
     </div>
     <div class="content" slot="column2">
         <Details/>
+        <SocialBar/>
     </div>
 </ColumnLayout>
 
