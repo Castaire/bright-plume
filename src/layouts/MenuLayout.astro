@@ -31,7 +31,7 @@ const { title, iconName } = Astro.props;
         <ViewTransitions/>
     </head>
     <body>
-        <div class="topbar minimized">
+        <div class="topbar minimized" transition:animate="none">
             <HomeIcon inMenu={true}/>
             <Highlight message="our menu!"/>
             <div class="banner">open 7 days a week // 250.763.2988</div>
